@@ -1,0 +1,634 @@
+<html>
+<meta charset="UTF-8">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DSRMF</title>
+    <meta name="description" content="Free bootstrap template Atlas">
+    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/aos.css">
+<link rel="stylesheet" href="css/menu.css">
+
+<!-- custom.css -->
+    <link rel="stylesheet" href="css/custom.css">
+     
+</head>
+
+<body style="background: linear-gradient(90deg, #e8f0f7, #ffffff);  background-color: #b0c4de;">
+    
+        <nav style="display: flex; justify-content: space-between; align-items: center; background: #000039; padding: 0px;">
+    
+    <!-- Main Menu -->
+    <ul class="top-bar" style="display: flex; list-style: none; margin: 0; padding: 0;">
+        <li style="margin-right: 20px;"><a href="index.html" style="color: white; text-decoration: none;">Home: The Risk Management Process</a></li>
+        <li style="margin-right: 20px; position: relative;">
+            <a href="#" style="color: white; text-decoration: none;">Phase 1: Risk Assessment ▼</a>
+            <ul class="dropdown">
+                <li>
+                    <a href="#" style="color: white; text-decoration: none;">Step 1: Risk Analysis ►</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="analysis-step2.html">Activity 1: Identification of Intended use and characteristics related to data security</a></li>
+                        <li><a href="analysis-step3.html">Activity 2: Identification of assets, threats and vulnerabilities</a></li>
+                        <li><a href="analysis-step4.html">Activity 3: Risk Estimation</a></li>
+                    </ul>
+                    <a href="evaluation.html" style="color: white; text-decoration: none;">Step 2: Risk Evaluation ►</a>
+                </li>
+            </ul>
+        </li>
+        <li style="margin-right: 20px;">
+            <a href="control.html" style="color: white; text-decoration: none;">Phase 2: Risk Control ▼</a>
+            <ul class="dropdown">
+                <li><a href="control.html">Step 1: Risk Control Option Analysis</a></li>
+                <li><a href="mapping3.drawio.html">Step 2: Identification and Implementation of Risk Controls</a></li>
+                <li><a href="residual.html">Step 3: Residual Risk Evaluation</a></li>
+                <li><a href="benefit.html">Step 4: Benefit-Risk Analysis</a></li>
+            </ul>
+        </li>
+        <li style="margin-right: 20px;"><a href="overall-residual.html" style="color: white; text-decoration: none;">Phase 3: Evaluation of Overall Residual Risk Acceptability</a></li>
+        <li><a href="RMreport.html" style="color: white; text-decoration: none;">Phase 4: Preparation of the Risk Management Report</a></li>
+    </ul>
+
+    <!-- Home, Back, Next Buttons -->
+    <div style="display: flex; gap: 10px;">
+        <a href="analysis-step3.html" style="background: #6c757d; color: white; padding: 8px 15px; border-radius: 8px; text-decoration: none; font-weight: bold;">Back</a>
+        <a href="evaluation.html" style="background: #28a745; color: white; padding: 8px 15px; border-radius: 8px; text-decoration: none; font-weight: bold;">Next</a>
+    </div>
+</nav>
+
+    	<div class="container mt-5">
+    <div class="container2">
+    <h2 class="text-center font-weight-bold my-5"><i>Phase 1: Step 1: </i><br>Step 1.3 - Estimation of risk(s) for each applicable threat and vulnerability combination</h2>
+</div>
+
+<div class="row">
+        <div>
+                <p>
+                    Security risk is estimated by combining the <b>likelihood</b> that a threat will successfully exploit a vulnerability with the <b>severity</b> of the resulting impact.<br><br>
+                    Conducting risk estimation includes the following tasks:
+                </p>
+                <ul>
+                    <li><b>Task 1: Determine Likelihood of occcurence (non-adversarial threats)/initiation (adversarial threats)</b></li>
+                    <li><b>Task 2: Determine Impact</b></li>
+                    <li><b>Task 3: Determine Risk</b></li>
+                </ul>
+        </div>
+    </div>
+   
+   <div class="col-12" id="task1">
+    <h3>Task 1: Determine Likelihood of Occurrence/Initiation</h3>
+    <p>
+        Likelihood of occurrence is a weighted factor based on a subjective analysis of the probability that a given threat is capable of exploiting a given vulnerability (or set of vulnerabilities). <br> <br>The following <b>likelihood factors</b> need to be considered to assess the likelihood of occurrence of adversarial threats:<br>
+    <ul>
+        <li> Adversary <i><b>intent</b></i> - The motivation, goals, and willingness of an attacker to carry out the threat event</li>
+        <li> Adversary <i><b>capability</b></i> - The attacker's technical skills, resources and overall ability to successfully carry out the threat </li>
+        <li> Adversary <i><b>targeting</b></i> - The targeted asset</li>
+        <br>
+        <li> For <b>non-adversarial threat events</b>, the <b>likelihood of occurrence</b> is estimated by: •  Historical evidence or empirical data on the threat</i></li>
+    </ul>
+</p>
+<p><b>During calculation, a likelihood level is assigned to each likelihood factor,and an overall likelihood level is then calculated by taking the average of all the likelihood factors.</b></p>
+<p>Following assessment scales can be used for assessing the <b>likelihood of threat event initiation or occurrence</b>:</p>
+<h5>
+    Likelihood of threat event initiation (Adversarial)
+</h5>
+<h6>
+    Assessment Scale - Likelihood of Threat Event Initiation (Adversarial)
+</h6>
+        <table class="table table-bordered mx-auto" style="width:80%">
+        <thead class="table-dark">
+        <tr>
+            <th>Qualitative Values</th>
+            <th colspan="2">Semi-Quantitative Values</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+  
+    <tbody>
+        <tr>
+            <td>Very High</td>
+            <td>96-100</td>
+            <td>10</td>
+            <td>Adversary is <b>almost certain</b> to initiate the threat event by exploiting the vulnerability.</td>
+        </tr>
+        <tr>
+            <td>High</td>
+            <td>80-95</td>
+            <td>8</td>
+            <td>Adversary is <b>highly likely</b> to initiate the threat event by exploiting the vulnerability.</td>
+        </tr>
+        <tr>
+            <td>Moderate</td>
+            <td>21-79</td>
+            <td>5</td>
+            <td>Adversary is <b>somewhat likely </b> to initiate the threat event by exploiting the vulnerability.</td>
+        </tr>
+        <tr>
+            <td>Low</td>
+            <td>5-20</td>
+            <td>2</td>
+            <td>Adversary is <b>unlikely</b> to initiate the threat event by exploiting the vulnerability.</td>
+        </tr>
+        <tr>
+            <td>Very Low</td>
+            <td>0-4</td>
+            <td>0</td>
+            <td>Adversary is <b>highly unlikely</b> to initiate the threat event by exploiting the vulnerability.</td>
+        </tr>
+    </tbody>
+</table>
+<h5>Likelihood of threat event Occurance (Non-Adversarial)</h5>
+<h6>
+    Assessment Scale - Likelihood of Threat Event Occurance (Non-Adversarial)
+</h6>
+<table class="table table-bordered" style="width:80%">
+        <thead class="table-dark">
+            <thead>
+        <tr>
+            <th>Qualitative Values</th>
+            <th colspan="2">Semi-Quantitative Values</th>
+            <th>Description</th>
+        </tr>
+    
+    </thead>
+    <tbody>
+        <tr>
+            <td>Very High</td>
+            <td>96-100</td>
+            <td>10</td>
+            <td>Error, accident, or act of nature is <b>almost certain</b> to occur; or occurs more than 100 times a year.</td>
+        </tr>
+        <tr>
+            <td>High</td>
+            <td>80-95</td>
+            <td>8</td>
+            <td>Error, accident, or act of nature is <b>highly likely</b> to occur; or occurs between 10-100 times a year.</td>
+        </tr>
+        <tr>
+            <td>Moderate</td>
+            <td>21-79</td>
+            <td>5</td>
+            <td>Error, accident, or act of nature is <b>somewhat likely</b> to occur; or occurs between 1-10 times a year.</td>
+        </tr>
+        <tr>
+            <td>Low</td>
+            <td>5-20</td>
+            <td>2</td>
+            <td>Error, accident, or act of nature is <b>unlikely</b> to occur; or occurs less than once a year, but more than once every 10 years.</td>
+        </tr>
+        <tr>
+            <td>Very Low</td>
+            <td>0-4</td>
+            <td>0</td>
+            <td>Error, accident, or act of nature is <b>highly unlikely</b> to occur; or occurs less than once every 10 years.</td>
+        </tr>
+    </tbody>
+</table>
+</center>
+</div>
+
+
+<div class="col-12" id="task2">
+    <h3>Task 2: Determine Impact</h3>
+    <p>
+        Impact is defined as the extent to which a threat event might affect the MDS AI model. When assessing impact, following <b>impact factors</b> need to be taken into consideration:
+    <ol>
+        <li>Harm to operations</li>
+        <li>Harm to assets</li>
+        <li>Harm to individuals</li>
+        <li>Reputational harm</li>
+        <li>Financial loss</li>
+    </ol>
+</p>
+
+<p><b>During the calculation, an impact level is assigned to each impact factor, and an overall impact level is then calculated by taking the average of all the impact factors.</b></p>
+<p> Following assessment scales can be used for assessing the <b> impact of threat events</b>:</p>
+ 
+        <h5>Impact of Threat Events</h5>
+        <h6>Assessment Scale - Impact of Threat Events</h6>
+                <table class="table table-bordered" style="width:80%">
+        <thead class="table-dark">
+            <thead>
+        <tr>
+            <th>Qualitative Values</th>
+            <th colspan="2">Semi-Quantitative Values</th>
+            <th>Description</th>
+        </tr>
+        
+    </thead>
+    <tbody>
+        <tr>
+            <td>Very High</td>
+            <td>96-100</td>
+            <td>10</td>
+            <td>The threat event could be expected to have <b>multiple severe or catastrophic</b> adverse effects on operations, assets, individuals, reputational harm or financial loss.</td>
+        </tr>
+        <tr>
+            <td>High</td>
+            <td>80-95</td>
+            <td>8</td>
+            <td>The threat event could be expected to have <b>severe or catastrophic</b> adverse effects on operations, assets, individuals, reputational harm or financial loss.</td>
+        </tr>
+        <tr>
+            <td>Moderate</td>
+            <td>21-79</td>
+            <td>5</td>
+            <td>The threat event could be expected to have <b> serious adverse</b> effects on operations, assets, individuals, reputational harm or financial loss.</td>
+        </tr>
+        <tr>
+            <td>Low</td>
+            <td>5-20</td>
+            <td>2</td>
+            <td>The threat event could be expected to have <b> limited </b> adverse effects on operations, assets, individuals, reputational harm or financial loss.</td>
+        </tr>
+        <tr>
+            <td>Very Low</td>
+            <td>0-4</td>
+            <td>0</td>
+            <td>The threat event could be expected to have <b> negligible </b> adverse effects on operations, assets, individuals, reputational harm or financial loss.</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div class="col-12" id="task3">
+    <h3>Task 3: Determine Risk (Semi-Quantitative and Qualitative)</h3>
+   
+    <p>
+       <b>(1) Semi-Quantitative - Risk Score Calculation </b><br><br>Once the <b>overall likelihood</b> and <b>overall impact</b> have been determined, the level of risk is calculated by combining the two.<br><br>
+       The risk score can be calculated using the formula below:
+    </p>
+ <p><b>Risk Score = <span style="background-color: #ffff99; padding: 2px 5px; border-radius: 4px;">Overall Likelihood × Overall Impact</span></b></p>
+
+
+  <!-- Risk Score Calculation Section -->
+<section style="background: #f0f8ff; border: 2px solid #000080 ; border-radius: 10px; padding: 20px; margin: 30px 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <h3 style="color: #000080 ; font-weight: bold;">📊 Risk Score Calculator</h3>
+    <p><i>Use this calculator to determine the risk score based on overall likelihood and impact.</i></p>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+        <div>
+            <label for="likelihood"><b>Overall Likelihood:</b></label><br>
+            <input type="number" id="likelihood" placeholder="Enter Overall Likelihood" style="padding: 8px; width: 200px; border-radius: 5px; border: 1px solid #ccc;">
+        </div>
+        <div>
+            <label for="impact"><b>Overall Impact:</b></label><br>
+            <input type="number" id="impact" placeholder="Enter Overall Impact" style="padding: 8px; width: 200px; border-radius: 5px; border: 1px solid #ccc;">
+        </div>
+        <div style="align-self: flex-end;">
+            <button onclick="calculateRisk()" style="background: #000080; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">
+                Calculate Risk Score
+            </button>
+        </div>
+    </div>
+
+    <p id="result" style="margin-top: 20px; font-size: 1.2em; font-weight: bold;"></p>
+</section>
+   <p>After calculating the risk score, the score should be assessed based on the following assessment scales to determine the overall risk level:</p>
+    
+        <h6>Assessment Scales – Overall Level of Risk <b><i>(Semi-Quantitative)</i></b></h6>
+                <table class="table table-bordered mx-auto" style="width:80%">
+        <thead class="table-dark">
+            <thead>
+        <tr>
+            <th>Qualitative Values</th>
+            <th colspan="2">Semi-Quantitative Values</th>
+            <th>Description</th>
+        </tr>
+        
+    </thead>
+    <tbody>
+        <tr>
+            <td>Very High</td>
+            <td>96-100</td>
+            <td>10</td>
+            <td><b>Very high risk </b>means that a threat event could be expected to have <b>multiple severe or catastrophic</b> adverse effects on operations, assets, individuals, reputational harm or financial loss.</td>
+        </tr>
+        <tr>
+            <td>High</td>
+            <td>80-95</td>
+            <td>8</td>
+            <td><b>High risk</b> means that a threat event could be expected to have <b>severe or catastrophic</b> adverse effects on operations, assets, individuals, reputational harm or financial loss.</td>
+        </tr>
+        <tr>
+            <td>Moderate</td>
+            <td>21-79</td>
+            <td>5</td>
+            <td><b>Moderate</b> risk means that a threat event could be expected to have<b> multiple severe or catastrophic</b> adverse effects on operations, assets, individuals, reputational harm or financial loss.</td>
+        </tr>
+        <tr>
+            <td>Low</td>
+            <td>5-20</td>
+            <td>2</td>
+            <td><b>Low risk </b>means that a threat event could be expected to have <b>limited </b>adverse effects on operations, assets, individuals, reputational harm or financial loss.</td>
+        </tr>
+        <tr>
+            <td>Very Low</td>
+            <td>0-4</td>
+            <td>0</td>
+            <td><b>Very low</b> risk means that a threat event could be expected to have <b>negligible</b> adverse effects on operations, assets, individuals, reputational harm or financial loss.</td>
+        </tr>
+    </tbody>
+</table>
+
+<p><b>(2) Qualitative - Risk Determination</b></p>
+<p>In qualitative risk determination, to identify the overall level of risk, the <b>qualitative levels</b> of both <i><b>overall likelihood</i></b> and <i><b>overall impact</i></b> should be analysed using the following assessment scales:</p>
+
+         <h6>Assessment Scales – Level of Risk <b><i>(Qualitative)</i></b></h6>
+        
+   <table class="table table-bordered mx-auto" style="width:80%">
+        <thead class="table-dark">
+            <tr>
+            <th rowspan="2">Overall Likelihood <br>(Threat Event Occurs and Result in Adverse Impact)</th>
+            <th colspan="5"><center>Overall Level of Impact</center></th>
+        </tr>
+        <tr>
+            <th>Very Low</th>
+            <th>Low</th>
+            <th>Moderate</th>
+            <th>High</th>
+            <th>Very High</th>
+        </tr>
+           </thead>
+        <tr>
+            <td><b>Very High</b></td>
+            <td>Very Low</td>
+            <td>Low</td>
+            <td>Moderate</td>
+            <td>High</td>
+            <td>Very High</td>
+        </tr>
+        <tr>
+            <td><b>High</b></td>
+            <td>Very Low</td>
+            <td>Low</td>
+            <td>Moderate</td>
+            <td>High</td>
+            <td>Very High</td>
+        </tr>
+        <tr>
+            <td><b>Moderate</b></td>
+            <td>Very Low</td>
+            <td>Low</td>
+            <td>Moderate</td>
+            <td>Moderate</td>
+            <td>High</td>
+        </tr>
+        <tr>
+            <td><b>Low</b></td>
+            <td>Very Low</td>
+            <td>Low</td>
+            <td>Low</td>
+            <td>Low</td>
+            <td>Moderate</td>
+        </tr>
+        <tr>
+            <td><b>Very Low</b></td>
+            <td>Very Low</td>
+            <td>Very Low</td>
+            <td>Very Low</td>
+            <td>Low</td>
+            <td>Low</td>
+        </tr>
+ </table>
+ </div>
+
+<div class="col-12" id="example1">
+  
+<h4><i>Example: Data poisoning attack on training data set</i></h4>
+<h4><b>Task 1: Determine Likelihood of Initiation</b></h4>
+
+<p>The following table presents the likelihood levels assigned to each likelihood factor, along with the calculated overall likelihood:</p>
+
+<table class="table table-bordered mx-auto" style="width:80%">
+        <thead class="table-dark">
+                <tr>
+            <th rowspan="3">Likelihood Factor</th>
+            <th rowspan="3">Likelihood Description</th>
+            <th colspan="3">Likelihood Level</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Qualitative Values</th>
+            <th colspan="2">Semi-Quantitaive Values</th>
+        </tr>
+        <tr>
+             <th>Scale</th>
+            <th>Bins</th>
+        </tr>
+    </thead>
+        <tr>
+            <td>Adversary Intent</td>
+            <td>Degrade the performance of the MDS AI model and make it behave in unintended ways by generating erroneous results</td>
+            <td>Very High</td>
+            <td>100</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Adversary Capability</td>
+            <td>Requires medium-level skill to launch the attack</td>
+            <td>High</td>
+            <td>90</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Adversary Targeting</td>
+            <td>The training dataset which is used as the basis for training the MDS AI model</td>
+            <td>Very High</td>
+            <td>95</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td colspan="2"><b>Average (Overall Likelihood)</b></td>
+            <td><b>Very High</b></td>
+            <td><b>95</b></td>
+            <td><b>9.3</b></td>
+        </tr>
+</table>
+
+<br>
+<h4><b>Task 2: Determine Impact</b></h4>
+
+<p>The following table presents the impact levels assigned to each impact factor, along with the calculated overall impact.</p>
+
+<table class="table table-bordered mx-auto" style="width:80%">
+        <thead class="table-dark">
+                <tr>
+            <th rowspan="3">Impact Factor</th>
+            <th rowspan="3">Impact Description</th>
+            <th colspan="3">Impact Level</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Qualitative Values</th>
+            <th colspan="2">Semi-Quantitaive Values</th>
+        </tr>
+        <tr>
+             <th>Scale</th>
+            <th>Bins</th>
+        </tr>
+    </thead>
+        <tr>
+            <td>Harm to Operations</td>
+            <td>The MDS AI model produces incorrect results, leading to misdiagnoses, incorrect treatment recommendations or causing negative effects on clinical performance </td>
+            <td>Very High</td>
+            <td>100</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Harm to Assets</td>
+            <td>The training data set become corrupt and untrustworthy</td>
+            <td>High</td>
+            <td>90</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Harm to Individuals</td>
+            <td>Patients may receive incorrect treatments, delayed diagnoses, or fatal medical errors, causing severe harm or death.</td>
+            <td>Very High</td>
+            <td>100</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Reputational Harm</td>
+            <td>The medical device software development organisation may loss of trust among patients, doctors and hospitals</td>
+            <td>High</td>
+            <td>90</td>
+            <td>8</td>
+        </tr>
+         <tr>
+            <td>Financial Loss</td>
+            <td>Financial damage includes product recalls, regulatory fines and loss of revenue due to declining trust</td>
+            <td>High</td>
+            <td>90</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td colspan="2"><b>Average (Overall Impact)</b></td>
+            <td><b>High</b></td>
+            <td><b>94</b></td>
+            <td><b>8.8</b></td>
+        </tr>
+</table>
+
+
+<h4><b>Task 3: Determine Risk</b></h4>
+<div class="col-12" id="task3">
+<h8><b>Risk Score calculation (Semi-Quantitative)</b></h8><br>
+ <p><i>Risk Score = Overall Likelihood × Overall Impact</i></p>
+ <p><b>Risk Score = 9.3 × 8.8 = 81.84 </b></p>
+ <p>As per the Semi-Quantitative assessment scales the overall risk is <b><i>"High"</b></i></p>
+</div>
+<div class="col-12" id="task3">
+ <h8><b>Risk Determination (Qualitative)</b></h8>
+ <p>Overall Likelihood = <b><i>"Very High"</b></i></p>
+ <p>Overall Impact = <b><i>"High"</i></b></p>
+  <p>As per the Qualitative assessment scales the overall risk is <b><i>"High"</b></i></p>
+    <table class="table table-bordered mx-auto" style="width:80%">
+        <thead class="table-dark">
+                <tr>
+            <th rowspan="2">Likelihood <br>(Threat Event Occurs and Result in Adverse Impact)</th>
+            <th colspan="5"><center>Level of Impact</center></th>
+        </tr>
+ 
+        <tr>
+            <th>Very Low</th>
+            <th>Low</th>
+            <th>Moderate</th>
+            <th> <span style="color: red;">High</th>
+            <th>Very High</th>
+        </tr>
+           </thead>
+        <tr>
+            <td><span style="color: red;"><b>Very High</b></td>
+            <td>Very Low</td>
+            <td>Low</td>
+            <td>Moderate</td>
+            <td style="background-color: red;">High</td>
+            <td>Very High</td>
+        </tr>
+        <tr>
+            <td><b>High</b></td>
+            <td>Very Low</td>
+            <td>Low</td>
+            <td>Moderate</td>
+            <td>High</td>
+            <td>Very High</td>
+        </tr>
+        <tr>
+            <td><b>Moderate</b></td>
+            <td>Very Low</td>
+            <td>Low</td>
+            <td>Moderate</td>
+            <td>Moderate</td>
+            <td>High</td>
+        </tr>
+        <tr>
+            <td><b>Low</b></td>
+            <td>Very Low</td>
+            <td>Low</td>
+            <td>Low</td>
+            <td>Low</td>
+            <td>Moderate</td>
+        </tr>
+        <tr>
+            <td><b>Very Low</b></td>
+            <td>Very Low</td>
+            <td>Very Low</td>
+            <td>Very Low</td>
+            <td>Low</td>
+            <td>Low</td>
+        </tr>
+ </table>
+</div>
+</div>
+</div>
+
+<!-- copyright -->
+    <div class="jumbotron jumbotron-fluid" id="copyright">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                    Copyright © 2025 Buddhika Jayaneththi
+                </div>
+                <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+                    <a href="mailto:buddhika.jayaneththi@dkit.ie" class="d-inline-block text-center ml-2">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/buddhika-gayashani/" class="d-inline-block text-center ml-2" target="_blank">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script type="text/javascript" src="js/toggle.js"></script>
+   <script>
+        function calculateRisk() {
+            // Get user input values
+            let likelihood = parseFloat(document.getElementById("likelihood").value);
+            let impact = parseFloat(document.getElementById("impact").value);
+
+            // Check if inputs are valid numbers
+            if (isNaN(likelihood) || isNaN(impact) || likelihood < 0 || impact < 0) {
+                document.getElementById("result").innerHTML = "Please enter valid positive numbers!";
+                document.getElementById("result").style.color = "red";
+                return;
+            }
+
+            // Calculate Risk Score
+            let riskScore = likelihood * impact;
+
+            // Display the result
+            document.getElementById("result").innerHTML = `Risk Score: <span style="color: blue;">${riskScore}</span>`;
+            document.getElementById("result").style.color = "black";
+        }
+    </script>
+</body>
+</html>
+

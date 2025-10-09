@@ -1,0 +1,170 @@
+<html>
+<meta charset="UTF-8">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DSRMF</title>
+    <meta name="description" content="Free bootstrap template Atlas">
+    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/aos.css">
+
+        <!-- custom.css -->
+    <link rel="stylesheet" href="css/custom.css">
+
+
+<link rel="stylesheet" href="css/menu.css">
+     
+</head>
+
+<body style="background: linear-gradient(90deg, #e8f0f7, #ffffff);  background-color: #b0c4de;">
+    
+       <nav style="display: flex; justify-content: space-between; align-items: center; background: #000039; padding: 0px;">
+    
+    <!-- Main Menu -->
+    <ul class="top-bar" style="display: flex; list-style: none; margin: 0; padding: 0;">
+        <li style="margin-right: 20px;"><a href="index.html" style="color: white; text-decoration: none;">Home: The Risk Management Process</a></li>
+        <li style="margin-right: 20px; position: relative;">
+            <a href="#" style="color: white; text-decoration: none;">Phase 1: Risk Assessment ▼</a>
+            <ul class="dropdown">
+                <li>
+                    <a href="#" style="color: white; text-decoration: none;">Step 1: Risk Analysis ►</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="analysis-step2.html">Activity 1: Identification of Intended use and characteristics related to data security</a></li>
+                        <li><a href="analysis-step3.html">Activity 2: Identification of assets, threats and vulnerabilities</a></li>
+                        <li><a href="analysis-step4.html">Activity 3: Risk Estimation</a></li>
+                    </ul>
+                    <a href="evaluation.html" style="color: white; text-decoration: none;">Step 2: Risk Evaluation ►</a>
+                </li>
+            </ul>
+        </li>
+        <li style="margin-right: 20px;">
+            <a href="control.html" style="color: white; text-decoration: none;">Phase 2: Risk Control ▼</a>
+            <ul class="dropdown">
+                <li><a href="control.html">Step 1: Risk Control Option Analysis</a></li>
+                <li><a href="mapping3.drawio.html">Step 2: Identification and Implementation of Risk Controls</a></li>
+                <li><a href="residual.html">Step 3: Residual Risk Evaluation</a></li>
+                <li><a href="benefit.html">Step 4: Benefit-Risk Analysis</a></li>
+            </ul>
+        </li>
+        <li style="margin-right: 20px;"><a href="overall-residual.html" style="color: white; text-decoration: none;">Phase 3: Evaluation of Overall Residual Risk Acceptability</a></li>
+        <li><a href="RMreport.html" style="color: white; text-decoration: none;">Phase 4: Preparation of the Risk Management Report</a></li>
+    </ul>
+
+    <!-- Home, Back, Next Buttons -->
+    <div style="display: flex; gap: 10px;">
+        <a href="index.html" style="background: #6c757d; color: white; padding: 8px 15px; border-radius: 8px; text-decoration: none; font-weight: bold;">Back</a>
+        <a href="analysis-step3.html" style="background: #28a745; color: white; padding: 8px 15px; border-radius: 8px; text-decoration: none; font-weight: bold;">Next</a>
+    </div>
+</nav>
+
+    	<div class="container mt-5">
+    <div class="container2">
+    <h2 class="text-center font-weight-bold my-5"><i>Phase 1: Step 1:</i><br> Activity 1 - Identify the intended use and the characteristics related to data security </h2>
+</div>
+
+     <div class="row" id="IU-DS">
+        <div class="col-md-6"><h4>Intended Use</h4><br>
+            <p>Each risk analysis begins with identifying and documenting a clear description of the MDS AI model and its intended use. The following questions are suggested to raise when describing the MDS AI model:</p>
+            <div class="section"  onclick="toggleDiv(0)">
+            <div class="label"><h4><i><center>Questions to be asked</center></i></h4></div><br>
+            <div  class="content">
+             <table class="table table-bordered" >
+                <thead class="table-dark">
+        <tr>
+            <th>#</th>
+            <th>Question</th>
+        </tr>
+     </thead>
+        <tr>
+            <td>1</td>
+            <td>What is the primary clinical function of the MDS AI model (Is it intended for diagnosis, treatment planning, prognosis, monitoring or another clinical performance)?</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Who are the intended users of the MDS AI model (Will it be used by healthcare prefessionals, patients or other stakeholders)?</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>What target population the MDS AI model designed for (Are there any specific inclusion/exclusion criteria related to demographics, medical conditions or other factors)? </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>In what clinical environment will the MDS AI model be deployed (Is it designed for use in hospitals, clinics, home settings or other healthcare environments)?</td>
+        </tr>
+           <tr>
+            <td>5</td>
+            <td>Does the MDS AI model have the ability to learn over time? If so, is there any potential impact to the intended use?</td>
+        </tr>
+         
+    </table>
+</div>
+        </div>
+     </div>
+
+        <div class="col-md-6"><h4>Characteristics related to Data Security</h4><br>
+            <p>The following questions are suggested to raise when identifying the characteristics related to data security of the MDS AI model:</p>
+            <div class="section"  onclick="toggleDiv(1)">
+            <div class="label"><h4><i><center>Questions to be asked</center></i></h4></div><br>
+            <div  class="content">
+             <table class="table table-bordered" >
+                <thead class="table-dark">
+        <tr>
+            <th>#</th>
+            <th>Question</th>
+        </tr>
+        </thead>
+
+        </tr>
+        <tr><td>1</td><td>Does the MDS AI model uses PII data?</td></tr>
+        <tr><td>2</td><td>Is the data encrypted when at rest?</td></tr>
+        <tr><td>3</td><td>Are backups created and stored elsewhere? Are backups encrypted?</td></tr>
+        <tr><td>4</td><td>Is patient data scrubbed or obscured to remove personal information when not required?</td></tr>
+        <tr><td>5</td><td>How is the integrity of the data preserved?</td></tr>
+        <tr><td>6</td><td>Is the data encrypted when not at rest?</td></tr>
+        <tr><td>8</td><td>Are you training from user-supplied inputs (What kind of input validation/sanitisation techniques are used)?</td></tr>
+        <tr><td>9</td><td>How sensitive is the data you train from?</td></tr>
+        <tr><td>10</td><td>Can your model output sensitive data?</td></tr>
+        <tr><td>12</td><td>Do you know if your training algorithms are resilient to adversarial inputs?</td></tr>
+        <tr><td>13</td><td>How do you recover from adversarial contamination of your training data? (i) Can you isolate/quarantine adversarial content and re-train impacted models? (ii) Can you roll back/recover to a model of a prior version for re-training? </td></tr>
+        <tr><td>14</td><td>What authentication and authorisation mechanisms are in place to ensure only authorised users can interact with the AI model and its data?</td></tr>
+        <tr><td>15</td><td>Is there a system for logging and monitoring access and modifications to the AI model and its data?</td></tr>
+
+        </tr>
+    </table>
+    </div>
+        </div>
+     </div>
+ </div>
+</div>
+
+<!-- copyright -->
+    <div class="jumbotron jumbotron-fluid" id="copyright">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                    Copyright © 2025 Buddhika Jayaneththi
+                </div>
+                <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+                    <a href="mailto:buddhika.jayaneththi@dkit.ie" class="d-inline-block text-center ml-2">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/buddhika-gayashani/" class="d-inline-block text-center ml-2" target="_blank">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script type="text/javascript" src="js/toggle.js"></script>
+</body>
+</html>
+
