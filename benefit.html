@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DSRMF</title>
+    <meta name="description" content="Free bootstrap template Atlas">
+    <link rel="icon" href="img/favicon.png" sizes="32x32" type="image/png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="css/aos.css">
+
+ <link rel="stylesheet" href="css/menu.css">
+
+   <!-- custom.css -->
+    <link rel="stylesheet" href="css/custom.css">
+     
+</head>
+
+<body style="background: linear-gradient(90deg, #e9f0ea, #ffffff); background-color: #e9f0ea;">
+    
+        <nav style="display: flex; justify-content: space-between; align-items: center; background: #000039; padding: 0px;">
+    
+    <!-- Main Menu -->
+    <ul class="top-bar" style="display: flex; list-style: none; margin: 0; padding: 0;">
+        <li style="margin-right: 20px;"><a href="index.html" style="color: white; text-decoration: none;">Home: The Risk Management Process</a></li>
+        <li style="margin-right: 20px; position: relative;">
+            <a href="#" style="color: white; text-decoration: none;">Phase 1: Risk Assessment ▼</a>
+            <ul class="dropdown">
+                <li>
+                    <a href="#" style="color: white; text-decoration: none;">Step 1: Risk Analysis ►</a>
+                    <ul class="sub-dropdown">
+                        <li><a href="analysis-step2.html">Activity 1: Identification of Intended use and characteristics related to data security</a></li>
+                        <li><a href="analysis-step3.html">Activity 2: Identification of assets, threats and vulnerabilities</a></li>
+                        <li><a href="analysis-step4.html">Activity 3: Risk Estimation</a></li>
+                    </ul>
+                    <a href="evaluation.html" style="color: white; text-decoration: none;">Step 2: Risk Evaluation ►</a>
+                </li>
+            </ul>
+        </li>
+        <li style="margin-right: 20px;">
+            <a href="control.html" style="color: white; text-decoration: none;">Phase 2: Risk Control ▼</a>
+            <ul class="dropdown">
+                <li><a href="control.html">Step 1: Risk Control Option Analysis</a></li>
+                <li><a href="mapping3.drawio.html">Step 2: Identification and Implementation of Risk Controls</a></li>
+                <li><a href="residual.html">Step 3: Residual Risk Evaluation</a></li>
+                <li><a href="benefit.html">Step 4: Benefit-Risk Analysis</a></li>
+            </ul>
+        </li>
+        <li style="margin-right: 20px;"><a href="overall-residual.html" style="color: white; text-decoration: none;">Phase 3: Evaluation of Overall Residual Risk Acceptability</a></li>
+        <li><a href="RMreport.html" style="color: white; text-decoration: none;">Phase 4: Preparation of the Risk Management Report</a></li>
+    </ul>
+
+    <!-- Home, Back, Next Buttons -->
+    <div style="display: flex; gap: 10px;">
+        <a href="residual.html" style="background: #6c757d; color: white; padding: 8px 15px; border-radius: 8px; text-decoration: none; font-weight: bold;">Back</a>
+        <a href="overall-residual.html" style="background: #28a745; color: white; padding: 8px 15px; border-radius: 8px; text-decoration: none; font-weight: bold;">Next</a>
+    </div>
+</nav>
+
+    <div class="container mt-5">
+    <div>
+    <h2 class="text-center font-weight-bold my-5"><i>Phase 2: Step 4:</i><br>Benefit Risk Analysis </h2>
+</div>
+<div class="col-12">
+
+    <p>A benefit-risk analysis should be performed for the residual risks that are judged <b>unacceptable</b> (identified in setp 3) and for which <b>further risk control is not practicable</b>. The benefit-risk analysis is used to determine whether the residual risk is outweighed by the expected benefits of the intended use of the MDS AI model. It is important to note that practicability of further risk reduction should be evaluated before considering a benefit-risk analysis.The AI model should not be deployed if the benefits do not outweigh the risks or until additional risk reduction measures are applied.</p>
+    <p>For performing benefit-risk analysis, the following steps need to be followed:
+        <ol>
+            <li><b>Benefit calculation</b></li>
+            <li><b>Risk calculation</b></li>
+            <li><b>Benefit-Risk ratio calculation</b></li>
+            <li><b>Determine acceptability</b></li>
+        </ol>
+
+    </p>
+</div>
+
+<div class="col-12" id="ra">
+    <h4>(1) Benefit Calculation</h4>
+    <p>
+The following factors need to be considered during benefit identification:
+
+<ol>
+<li>The <b>clinical performance</b> expected from the use of MDS AI model during clinical use.</li>
+<li>The <b>clinical benefit</b> expected from that performance. </i></b></li>
+</ol>
+
+    </p>
+
+     <p>The <b>clinical performance </b> and <b>clinical benefit</b> can be differentiated as follows:</b></p>
+    <table class="table table-bordered mx-auto" style="width: 80%">
+        <thead class="table-dark">
+        <tr>
+            <th>Category</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+        <tr>
+            <td><strong>Clinical Performance</strong></td>
+            <td>The ability of the MDS AI model to achieve its intended medical purpose, thereby leading to a clinical benefit.</td>
+        </tr>
+        <tr>
+            <td><strong>Clinical Benefit</strong></td>
+            <td>The positive impact of using the MDS AI model on an individual’s health, expressed in terms of meaningful, measurable, patient-relevant clinical outcome(s) such as improvements in the quality of life, symptom relief, pain relief, enhanced diagnosis etc...</td>
+        </tr>
+    </table>
+        </center>
+    <p>
+        The following aspects should be taken into account when calculating the benefit:
+    </p>
+
+    <ul>
+        <li>Type of expected <i> clinical benefits</i> for the patient - For example, whether the AI model performs a significant role in a life-saving medical device or is essential in a specific medical scenario.</li>
+        <li><i><b>Probability</b></i> that the patient will experience the expected <i>clinical benefits</i> - The likelihood that the MDS AI model is effective in performing the clinical function.</li>
+        <li><i><b>Magnitude</i></b> of the expected <i>clinical benefits</i> - The degree to which the patient will experience the clinical benefit.</li>
+    </ul>
+    
+   
+        <h4>Probability of benefit experience</h4>
+        <p> The following assessment scales can be used to assess <b>the probability that the patient will experience the expected clinical benefit</b>:</p>
+                <h6>Assessment Scales - Probability of clinical benefit experience</h6>
+                <table class="table table-bordered mx-auto" style="width:80%">
+        <thead class="table-dark">
+            <thead>
+        <tr>
+            <th>Qualitative Values</th>
+            <th colspan="2">Semi-Quantitative Values</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+<tbody>
+    <tr>
+        <td>Very High</td>
+        <td>96–100</td>
+        <td>10</td>
+        <td >It <b>almost certain</b> to experience the expected clinical benefit</td>
+    </tr>
+    <tr>
+        <td>High</td>
+        <td>80–95</td>
+        <td>8</td>
+        <td >It is <b>highly likely</b> to experience the expected clinical benefit.</td>
+    </tr>
+    <tr>
+        <td>Moderate</td>
+        <td>21–79</td>
+        <td>5</td>
+        <td >It is <b>somewhat likely </b> to experience the expected clinical benefit.</td>
+    </tr>
+    <tr>
+        <td>Low</td>
+        <td>5–20</td>
+        <td>2</td>
+        <td >It is <b>unlikely</b> to experience the expected clinical benefit.</td>
+    </tr>
+    <tr>
+        <td>Very Low</td>
+        <td>0–4</td>
+        <td>0</td>
+        <td>It is <b>highly unlikely</b> to experience the expected clinical benefit.</td>
+    </tr>
+</tbody>
+
+</table>
+<p>A probability value need to be assigned to the identified benefit based on the above assessment scales. </p>
+<h4>Magnitude of the expected clinical benefits</h4>
+<p> The following assessment scales can be used to assess the <b> magnitude of the expected clinical benefits</b>:</p>
+
+        
+        <h6>Assessment Scales - Magnitude of the expected clinical benefits</h6>
+                <table class="table table-bordered mx-auto" style="width:80%">
+        <thead class="table-dark">
+            <thead>
+        <tr>
+            <th>Qualitative Values</th>
+            <th colspan="2">Semi-Quantitative Values</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+<tbody>
+    <tr>
+        <td>Very High</td>
+        <td>96–100</td>
+        <td>10</td>
+        <td>The expected clinical benefit is <b>critical or transformative</b>, with a major positive impact on patient outcomes (e.g., life-saving, major improvement in quality of life).</td>
+    </tr>
+    <tr>
+        <td>High</td>
+        <td>80–95</td>
+        <td>8</td>
+        <td>The expected clinical benefit is <b>significant</b>, providing clear clinical improvements (e.g., improved diagnosis accuracy, faster treatment, reduced complications).</td>
+    </tr>
+    <tr>
+        <td>Moderate</td>
+        <td>21–79</td>
+        <td>5</td>
+        <td>The expected clinical benefit is <b>moderate</b>, offering measurable clinical value (e.g., enhanced monitoring, reduced clinician workload).</td>
+    </tr>
+    <tr>
+        <td>Low</td>
+        <td>5–20</td>
+        <td>2</td>
+        <td>The expected clinical benefit is <b>limited</b>, with minor improvements to existing clinical processes or outcomes.</td>
+    </tr>
+    <tr>
+        <td>Very Low</td>
+        <td>0–4</td>
+        <td>0</td>
+        <td>The expected clinical benefit is <b>minimal or negligible</b>, with little to no meaningful impact on clinical outcomes.</td>
+    </tr>
+</tbody>
+
+</table>
+</p>
+<p>A magnitude value need to be assigned to the identified benefit based on the above assessment scales. </p>
+
+    <p>After identifying the <b>probability</b> and <b>magnitude</b>, the benefit value can be calculated using the following equation:</p>
+     <p><b>Benefit Value = <span style="background-color: #ffff99; padding: 2px 5px; border-radius: 4px;">Probability * Magnitude</span></b></p>
+     <p>
+        <b><i>Probability</i></b> – <i>The probability that the patient will experience the expected clinical benefit</i><br>
+        <b><i>Magnitude</i></b> – <i>The magnitude of the expected clinical benefit </i></p>
+
+              <!-- Benefit value Calculation Section -->
+<section style="background: #f0f8ff; border: 2px solid #087830; border-radius: 10px; padding: 20px; margin: 30px 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <h3 style="color: #087830; font-weight: bold;">📊 Benefit Value Calculator</h3>
+    <p><i>Use this calculator to determine the benefit value using the probability and the magnitude.</i></p>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+        <div>
+            <label for="probability"><b>Probability:</b></label><br>
+            <input type="number" id="probability" placeholder="Enter probability" style="padding: 8px; width: 200px; border-radius: 5px; border: 1px solid #ccc;">
+        </div>
+        <div>
+            <label for="magnitude"><b>Magnitude:</b></label><br>
+            <input type="number" id="magnitude" placeholder="Enter magnitude" style="padding: 8px; width: 300px; border-radius: 5px; border: 1px solid #ccc;">
+        </div>
+        <div style="align-self: flex-end;">
+            <button onclick="calculateBenefitValue()" style="background: #087830; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">
+                Calculate Benefit Value
+            </button>
+        </div>
+    </div>
+
+    <p id="result1" style="margin-top: 20px; font-size: 1.2em; font-weight: bold;"></p>
+</section>
+    </div>
+
+ <!-- risk value -->
+
+    <div class="col-12" id="rm">
+    <h4>(2) Risk Calculation</h4>
+    The risk values are already calculated in the  
+    <a href="residual.html">Residual Risk Evaluation phase.</a>The values for each <b>unacceptable residual risks, for which further risk control is not possible,</b> are considered during this step. 
+    </p>
+</div>
+
+<div class="col-12" id="rs">
+    <h4>(3) Benefit-risk Ratio Calculation</h4>
+    <p>
+   Once the benefit value and risk values are calculated, the benefit-risk ratio can be determined using the formula below:
+    </p>
+<p><b>Benefit-Risk Ratio  = <span style="background-color: #ffff99; padding: 2px 5px; border-radius: 4px;">Benefit Value/Risk Value</span></b></p>
+
+        <!-- Benefit value Calculation Section -->
+<section style="background: #f0f8ff; border: 2px solid #087830; border-radius: 10px; padding: 20px; margin: 30px 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <h3 style="color: #087830; font-weight: bold;">📊 Benefit-risk Ratio Calculator</h3>
+    <p><i>Use this calculator to determine the benefit-risk ratio using the benefit value and the risk value.</i></p>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+        <div>
+            <label for="benefit"><b>Benefit Value:</b></label><br>
+            <input type="number" id="benefit" placeholder="Enter benefit value" step="0.1" style="padding: 8px; width: 200px; border-radius: 5px; border: 1px solid #ccc;">
+        </div>
+        <div>
+            <label for="risk"><b>Risk Value:</b></label><br>
+            <input type="number" id="risk" placeholder="Enter risk value" step="0.1"style="padding: 8px; width: 300px; border-radius: 5px; border: 1px solid #ccc;">
+        </div>
+        <div style="align-self: flex-end;">
+            <button onclick="calculateBenefitRiskRatio()" style="background: #087830; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">
+                Calculate Benefit-risk Ratio
+        </div>
+    </div>
+
+    <p id="result2" style="margin-top: 20px; font-size: 1.2em; font-weight: bold;"></p>
+</section>
+
+       
+    </div>
+
+    <div>
+        <p>
+            It should be noted that this approach assigns a value to each individual benefit and risk; it does not sum all risks or benefits to obtain a single value for each. This results in the calculation of a pairwise comparison between each risk and each benefit.
+        </p>
+        
+    </div>
+    <div class="col-12" id="rn">
+    <h4>(4) Determine Acceptability</h4>
+    <p>Any <b><i>benefit-risk ratio greater than 1 </b></i> is considered favorable, as the benefits outweigh the risks (i.e., the benefit value is greater than the risk value).</li>
+    </p>
+</div>
+</div>
+          
+     <!-- copyright -->
+    <div class="jumbotron jumbotron-fluid" id="copyright">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-6 text-white align-self-center text-center text-md-left my-2">
+                    Copyright © 2025 Buddhika Jayaneththi
+                </div>
+                <div class="col-md-6 align-self-center text-center text-md-right my-2" id="social-media">
+                    <a href="mailto:buddhika.jayaneththi@dkit.ie" class="d-inline-block text-center ml-2">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/buddhika-gayashani/" class="d-inline-block text-center ml-2" target="_blank">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    
+    <!-- AOS -->
+    <script src="js/aos.js"></script>
+    <script>
+      AOS.init({
+      });
+    </script>
+
+    <script>
+        //benefit calculation
+        function calculateBenefitValue() {
+            // Get input values
+            let probability = parseFloat(document.getElementById("probability").value);
+            let magnitude = parseFloat(document.getElementById("magnitude").value);
+
+            // Validate inputs
+            if (isNaN(probability) || isNaN(magnitude)) {
+                document.getElementById("result1").innerHTML = "Please enter valid probability and magnitude";
+                document.getElementById("result1").style.color = "red";
+                return;
+            }
+
+            // Calculate Residual Risk
+            let benefitValue = probability * magnitude;
+
+            // Display result
+            document.getElementById("result1").innerHTML = `Benefit Value: <span style="color:blue;">${benefitValue.toFixed(2)}</span>`;
+        }
+
+        //benefit-risk ration calculation
+
+         function calculateBenefitRiskRatio() {
+                    // Get input values
+                    let benefit = parseFloat(document.getElementById("benefit").value);
+                    let risk = parseFloat(document.getElementById("risk").value);
+
+                    // Validate inputs
+                    if (isNaN(benefit) || isNaN(risk)) {
+                        document.getElementById("result2").innerHTML = "Please enter valid benefit value and risk value";
+                        document.getElementById("result2").style.color = "red";
+                        return;
+                    }
+
+                    // Calculate Residual Risk
+                    let benefitriskratio = benefit / risk;
+
+                    // Display result
+                    document.getElementById("result2").innerHTML = `Benefit-Risk Ratio: <span style="color:blue;">${benefitriskratio.toFixed(2)}</span>`;
+                }
+    </script>
+</body>
+
+</html>
