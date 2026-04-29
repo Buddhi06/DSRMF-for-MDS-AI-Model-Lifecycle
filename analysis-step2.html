@@ -131,19 +131,24 @@
         </thead>
 
         </tr>
-        <tr><td>1</td><td>Does the MDS AI model uses PII data?</td></tr>
+        <tr><td>1</td><td>Does the MDS AI model processes PII data?</td></tr>
         <tr><td>2</td><td>Is the data encrypted when at rest?</td></tr>
-        <tr><td>3</td><td>Are backups created and stored elsewhere? Are backups encrypted?</td></tr>
+        <tr><td>3</td><td>Are backups created and stored elsewhere? Are backups encrypted? Are they encrypted prior to transmission? Is there a limit on how long backups are kept or on how many versions are kept?</td></tr>
         <tr><td>4</td><td>Is patient data scrubbed or obscured to remove personal information when not required?</td></tr>
         <tr><td>5</td><td>How is the integrity of the data preserved?</td></tr>
         <tr><td>6</td><td>Is the data encrypted when not at rest?</td></tr>
-        <tr><td>8</td><td>Are you training from user-supplied inputs (What kind of input validation/sanitisation techniques are used)?</td></tr>
-        <tr><td>9</td><td>How sensitive is the data you train from?</td></tr>
-        <tr><td>10</td><td>Can your model output sensitive data?</td></tr>
-        <tr><td>12</td><td>Do you know if your training algorithms are resilient to adversarial inputs?</td></tr>
-        <tr><td>13</td><td>How do you recover from adversarial contamination of your training data? (i) Can you isolate/quarantine adversarial content and re-train impacted models? (ii) Can you roll back/recover to a model of a prior version for re-training? </td></tr>
-        <tr><td>14</td><td>What authentication and authorisation mechanisms are in place to ensure only authorised users can interact with the AI model and its data?</td></tr>
-        <tr><td>15</td><td>Is there a system for logging and monitoring access and modifications to the AI model and its data?</td></tr>
+		<tr><td>7</td><td>Is encryption fixed or configurable? Is encryption based on a publicly recognised standard (E.g., AES 256) (recommended) or on a home-grown solution? How are keys managed?</td></tr>
+        <tr><td>8</td><td>Are you training from user-supplied inputs (e.g., direct clinical data inputs from clinicians, technicians etc...,manual user entries such as patient demographics, symptoms or severiety scales) What kind of input validation/sanitisation techniques are used?</td></tr>
+		<tr><td>9</td><td>Do portions of the data have different levels of sensitivity (PII/non-PII)? Is all data encrypted, or just PII?</td></tr>
+		<tr><td>10</td><td>What kinds of non-PII or personal data does the MDS AI model process (e.g., diagnostic data or therapy parameters)?</td></tr>
+		<tr><td>11</td><td>If an adverse event occurs, can the data be recovered or restored?</td></tr>
+        <tr><td>12</td><td>What controls are in place to ensure resilience against adversarial/poisoned inputs?</td></tr>
+        <tr><td>13</td><td>Do you know if your training algorithms are resilient to adversarial inputs?</td></tr>
+        <tr><td>14</td><td>How do you recover from adversarial contamination of your training data? (i) Can you isolate/quarantine adversarial content and re-train impacted models? (ii) Can you roll back/recover to a model of a prior version for re-training? </td></tr>
+        <tr><td>15</td><td>What authentication and authorisation mechanisms are in place to ensure only authorised users can interact with the AI model and its data?</td></tr>
+		<tr><td>16</td><td>How are credentials managed? Are credentials updated on a regular basis? How is credential expiration managed?</td></tr>
+        <tr><td>17</td><td>Is there a system for logging and monitoring access and modifications to the AI model and its data?</td></tr>
+		 <tr><td>18</td><td>Does your model return raw confidence scores or any other direct output which could be recorded and duplicated?</td></tr>
 
         </tr>
     </table>
